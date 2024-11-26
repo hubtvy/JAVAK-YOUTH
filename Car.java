@@ -10,19 +10,15 @@ public class Car {
         this.manufactureYear = manufactureYear;
         
     }
-
-// Method to display details 
-public void displayDetails() { 
-    double carvalue = price * manufactureYear;
-    System.out.println ("Name: " + name);
-    System.out.println ("Price: RM " + price);
-    System.out.println ("Manufacture Year: " + manufactureYear);
-    System.out.println ("Car Value : " + carvalue);
-    }
-
+    
+    // Method to display details 
+    public void displayDetails() { 
+        double carvalue = price * manufactureYear; 
+        System.out.println("Car Value: " + carvalue); 
+    } 
     public static void main(String[] args) { 
-        Car cardetails = new Car("Toyota", 100000 , 2016);
-        //Display the details of the person
-        cardetails.displayDetails();
+        Car cardetails = new Car("Toyota", 100000, 2010); 
+        // Display the details of the car 
+        cardetails.displayDetails(); 
     }
 }
