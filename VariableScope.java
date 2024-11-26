@@ -4,6 +4,10 @@ public class VariableScope {
 
     static int staticVariable = 20;
 
+    int age=20;
+    String name="Zhi Wei";
+    double height =165;
+
     public void showLocalVariable() {
         int localVariable = 30;
         System.out.println("Local Variable: " + localVariable);
@@ -14,12 +18,10 @@ public class VariableScope {
         System.out.println("Instance Variable: " + instanceVariable);
         System.out.println("Static Variable: " + staticVariable);
     }
-
     public static void main(String[] args) {
         VariableScope newvar = new VariableScope();
         newvar.showLocalVariable();
         newvar.showInstanceVariable();
-
     }
 
 
